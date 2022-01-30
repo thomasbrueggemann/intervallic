@@ -1,0 +1,23 @@
+.fretboard-container {
+  margin: 30px auto;
+  width: 50%;
+}
+
+@media (max-width: 850px) {
+  .fretboard-container {
+    width: 80%;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+}
