@@ -10,7 +10,7 @@ function App() {
   const [entry, setEntry] = useState<IntervalDefintion>(getRandomInterval());
 
   const selectOption = (option: string) => {
-    if (option === entry.value) {
+    if (option == entry.value) {
       setEntry(getRandomInterval());
     }
   };
@@ -48,9 +48,9 @@ function App() {
         />
       </div>
       <div className="options">
-        {options.map((option) => {
+        {options.map((option, i) => {
           return (
-            <button value={option} onClick={() => selectOption(option)}>
+            <button key={i} value={option} onClick={() => selectOption(option)}>
               {option}
             </button>
           );
